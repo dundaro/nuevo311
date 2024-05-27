@@ -148,7 +148,7 @@ const CampaignsConfig = () => {
                   name="messageInterval"
                   id="messageInterval"
                   labelId="messageInterval-label"
-                  label="Intervalo aletorio de Disparo"
+                  label="Intervalo aleatorio de Disparo"
                   value={settings.messageInterval}
                   onChange={(e) => handleOnChangeSettings(e)}
                 >
