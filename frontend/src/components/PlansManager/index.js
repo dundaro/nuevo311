@@ -274,7 +274,7 @@ export default function PlansManager() {
             console.log(planList)
             setRecords(planList)
         } catch (e) {
-            toast.error('No foe posible cargar a lista de registros')
+            toast.error('No fue posible cargar a lista de registros')
         }
         setLoading(false)
     }
