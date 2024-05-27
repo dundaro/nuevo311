@@ -1278,7 +1278,7 @@ const handleMessage = async (
     if (isGroup) {
       const grupoMeta = await wbot.groupMetadata(msg.key.remoteJid);
 
-      const msgGroupContact = {
+      const msgGroupContact 
         id: grupoMeta.id,
         name: grupoMeta.subject
       };
@@ -1349,7 +1349,7 @@ const handleMessage = async (
         // dev Ricardo: insistir a responder avaliação
         const rate = Number(bodyMessage);
 
-        if ((ticket?.lastMessage.includes("_Insatisfeito_") || ticket?.lastMessage.includes("Por favor califique nuestra atencion.")) && (!Number.isFinite(rate))) {
+        if ((ticket?.lastMessage.includes("_Insatisfecho_") || ticket?.lastMessage.includes("Por favor califique nuestra atencion.")) && (!Number.isFinite(rate))) {
           const debouncedSentMessage = debounce(
             async () => {
               await wbot.sendMessage(
